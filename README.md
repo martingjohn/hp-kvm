@@ -1,5 +1,5 @@
 # hp-kvm
-As the card software for the HP Microserver GEN 6 remote access card is rather old, it only seems to work with Java 1.6 (and possibly non 64bit), which is rather hard to get working now without something like an Windows XP virtual machine.
+As the card software for the HP Microserver GEN 6 remote access card is rather old, it only seems to work with Java 1.6, which is rather hard to get working now without something like an Windows XP virtual machine.
 
 This provides access to either the KVM console or the media manager via a Ubuntu 12.04 docker image and vnc client
 
