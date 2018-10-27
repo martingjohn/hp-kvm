@@ -5,7 +5,7 @@ This provides access to either the KVM console or the media manager via a Ubuntu
 
 To run to get access to the KVM console
 
-docker run \
+    docker run \
        -d \
        --name kvm \
        --rm \
@@ -22,7 +22,7 @@ docker run \
 
 To get access to the media manager
 
-docker run \
+    docker run \
        -d \
        --name media \
        --rm \
