@@ -12,7 +12,7 @@ then
         exit 2
 fi
 
-HOST=$(nslookup -domain=home $HOST_TEMP | grep Name: | awk '{print $2}')
+HOST=$(nslookup -domain=${DOMAIN} $HOST_TEMP | grep Name: | awk '{print $2}')
 if [ "x$HOST" == "x" ]
 then
         echo "$HOST_TEMP not found"
@@ -54,4 +54,3 @@ END
 
 javaws ${JNLP_FILE}
 rm ${JNLP_FILE}
-
