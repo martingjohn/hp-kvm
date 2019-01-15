@@ -15,6 +15,8 @@ else
 	/usr/bin/x11vnc -xkb -noxrecord -noxfixes -noxdamage -nopw -wait 5 -shared -permitfiletransfer -tightfilexfer -forever -rfbport ${VNC_PORT} &
 fi
 
+setxkbmap $KEYMAP
+
 if [[ "${KVM_SCRIPT}" == "kvm" ]]
 then
 	/opt/kvm.sh
@@ -25,4 +27,3 @@ else
 	echo "Unknown option ${KVM_SCRIPT}"
 	die
 fi
-
