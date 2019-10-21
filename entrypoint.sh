@@ -6,6 +6,8 @@ shopt -s nocasematch
 
 /usr/bin/Xvfb ${DISPLAY} -screen 0 ${VNC_RESOLUTION}x24 &
 
+sleep 2
+
 if [[ "x$VNC_PASSWORD" != "x" ]]
 then
 	mkdir ~/.vnc
