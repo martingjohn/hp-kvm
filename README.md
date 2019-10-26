@@ -18,6 +18,7 @@ To run to get access to the KVM console
        -e VNC_PORT=5902 \
        -e VNC_PASSWORD=secret \
        -e VNC_RESOLUTION=800x600 \
+       -e KEYMAP=gb \
        martinjohn/hp-kvm
 
 To get access to the media manager
@@ -35,17 +36,19 @@ To get access to the media manager
        -e VNC_PORT=5902 \
        -e VNC_PASSWORD=secret \
        -e VNC_RESOLUTION=800x600 \
+       -e KEYMAP=gb \
        martinjohn/hp-kvm
 
 Obviously you need to either pass through the port or run on the host network.
 
 Variables defined are
 
-KVM_HOST - hostname of the Microserver (this could be fully qualified or you can fill in the KVM_DOMAIN) (default: default)
-KVM_USER - username you log into the Microserver's remote access card webpage with (default: admin)
-KVM_PASSWORD - password you log into the Microserver's remote access card webpage with (default: secret)
-KVM_DOMAIN - used with the KVM_HOST and a nslookup to find the FQDN of the Microserver (default: home)
-KVM_SCRIPT - either kvm or media, depending on what you want to run (default: kvm)
-VNC_PORT - port for VNC to run on, needs to match with the "-p" settings (default: 5900)
-VNC_PASSWORD - password for VNC server or "" for none (default: no password)
-VNC_RESOLUTION - resolution for the VNC server in format HxV (default: 800x600)
+- KVM_HOST - hostname of the Microserver (this could be fully qualified or you can fill in the KVM_DOMAIN) (default: default)
+- KVM_USER - username you log into the Microserver's remote access card webpage with (default: admin)
+- KVM_PASSWORD - password you log into the Microserver's remote access card webpage with (default: secret)
+- KVM_DOMAIN - used with the KVM_HOST and a nslookup to find the FQDN of the Microserver (default: home)
+- KVM_SCRIPT - either kvm or media, depending on what you want to run (default: kvm)
+- VNC_PORT - port for VNC to run on, needs to match with the "-p" settings (default: 5900)
+- VNC_PASSWORD - password for VNC server or "" for none (default: no password)
+- VNC_RESOLUTION - resolution for the VNC server in format HxV (default: 800x600)
+- KEYMAP - keyboard map (default: us)
